@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JenkinsiOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSL-ZE-Pvo">
+                                <rect key="frame" x="175" y="338" width="64" height="42"/>
+                                <accessibility key="accessibilityConfiguration" label="TestButton"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <state key="normal" title="Check"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Email ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVW-9A-AYp">
+                                <rect key="frame" x="78.5" y="94" width="257" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="TestLabel"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VpI-DC-ncL">
+                                <rect key="frame" x="20" y="254" width="374" height="34"/>
+                                <accessibility key="accessibilityConfiguration" label="TestTextField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VpI-DC-ncL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Fr-UQ-Apm"/>
+                            <constraint firstItem="VpI-DC-ncL" firstAttribute="top" secondItem="pVW-9A-AYp" secondAttribute="bottom" constant="100" id="KVm-ON-8Rx"/>
+                            <constraint firstItem="pVW-9A-AYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PAu-Ij-JOd"/>
+                            <constraint firstItem="pVW-9A-AYp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Qbc-jQ-atI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VpI-DC-ncL" secondAttribute="trailing" constant="20" id="Wpx-Cz-QfC"/>
+                            <constraint firstItem="KSL-ZE-Pvo" firstAttribute="centerX" secondItem="VpI-DC-ncL" secondAttribute="centerX" id="dE1-Cs-asC"/>
+                            <constraint firstItem="KSL-ZE-Pvo" firstAttribute="top" secondItem="VpI-DC-ncL" secondAttribute="bottom" constant="50" id="fLv-fh-d8d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+    </scenes>
+</document>
