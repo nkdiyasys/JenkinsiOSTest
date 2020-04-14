@@ -41,6 +41,13 @@ class JenkinsiOSTestTests: XCTestCase {
         XCTAssertFalse(isNotValid, "Email is Not Valid")
     }
     
+    func testCheck_EmailIsInValid(){
+          let email = "test@gmai"
+          let isValid = vc.isValidEmail(email: email)
+          XCTAssertTrue(isValid, "Email is Valid")
+          
+      }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
