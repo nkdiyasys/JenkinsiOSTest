@@ -15,6 +15,7 @@
 		334299F0243EE71800F41F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334299EE243EE71800F41F42 /* LaunchScreen.storyboard */; };
 		334299FB243EE71900F41F42 /* JenkinsiOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334299FA243EE71900F41F42 /* JenkinsiOSTestTests.swift */; };
 		33429A06243EE71900F41F42 /* JenkinsiOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33429A05243EE71900F41F42 /* JenkinsiOSTestUITests.swift */; };
+		339EAA7D244956EA00CB5D19 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 339EAA7C244956E900CB5D19 /* sample.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		33429A01243EE71900F41F42 /* JenkinsiOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenkinsiOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33429A05243EE71900F41F42 /* JenkinsiOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsiOSTestUITests.swift; sourceTree = "<group>"; };
 		33429A07243EE71900F41F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339EAA7C244956E900CB5D19 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		334299E2243EE70F00F41F42 /* JenkinsiOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				339EAA7C244956E900CB5D19 /* sample.pdf */,
 				334299E3243EE70F00F41F42 /* AppDelegate.swift */,
 				334299E5243EE70F00F41F42 /* SceneDelegate.swift */,
 				334299E7243EE70F00F41F42 /* ViewController.swift */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339EAA7D244956EA00CB5D19 /* sample.pdf in Resources */,
 				334299F0243EE71800F41F42 /* LaunchScreen.storyboard in Resources */,
 				334299ED243EE71800F41F42 /* Assets.xcassets in Resources */,
 				334299EB243EE70F00F41F42 /* Main.storyboard in Resources */,

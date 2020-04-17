@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import PDFKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var checkButton: UIButton!
-    
+    @IBOutlet weak var pdfView: PDFView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //1
+    pdfViewFunc()
+    }
+    
+    func pdfViewFunc() {
+        
+        
+        guard let path = Bundle.main.url(forResource: "sample", withExtension: "pdf") else { return }
+
+        if let document = PDFDocument(url: path) {
+            pdfView.document = document
+        }
+        
     }
     
     @IBAction func clickEmail(_ sender: Any) {

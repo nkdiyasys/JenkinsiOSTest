@@ -34,19 +34,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlY-te-IHo" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="448.5" width="414" height="310.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nlY-te-IHo" secondAttribute="height" multiplier="4:3" id="XRr-Oe-RBy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VpI-DC-ncL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Fr-UQ-Apm"/>
+                            <constraint firstItem="nlY-te-IHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6rf-DM-VxP"/>
                             <constraint firstItem="VpI-DC-ncL" firstAttribute="top" secondItem="pVW-9A-AYp" secondAttribute="bottom" constant="100" id="KVm-ON-8Rx"/>
                             <constraint firstItem="pVW-9A-AYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PAu-Ij-JOd"/>
                             <constraint firstItem="pVW-9A-AYp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Qbc-jQ-atI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nlY-te-IHo" secondAttribute="bottom" constant="103" id="Uaf-Z8-Bsg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VpI-DC-ncL" secondAttribute="trailing" constant="20" id="Wpx-Cz-QfC"/>
                             <constraint firstItem="KSL-ZE-Pvo" firstAttribute="centerX" secondItem="VpI-DC-ncL" secondAttribute="centerX" id="dE1-Cs-asC"/>
                             <constraint firstItem="KSL-ZE-Pvo" firstAttribute="top" secondItem="VpI-DC-ncL" secondAttribute="bottom" constant="50" id="fLv-fh-d8d"/>
+                            <constraint firstItem="nlY-te-IHo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gIN-NT-gSH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pdfView" destination="nlY-te-IHo" id="0DN-FV-bHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
